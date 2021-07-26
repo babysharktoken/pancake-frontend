@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "BabyShark Swap Default List",
   "timestamp": "2021-05-06T00:00:00Z",
   "version": {
     "major": 3,
@@ -59,7 +59,7 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059ff775485246999027b3197955.png"
     },
     {
-      "name": "PancakeSwap Token",
+      "name": "BabyShark Swap Token",
       "symbol": "CAKE",
       "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
       "chainId": 56,

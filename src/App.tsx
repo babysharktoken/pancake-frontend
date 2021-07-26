@@ -1,12 +1,12 @@
 import React, { lazy } from 'react'
-import { Router, Redirect, Route, Switch } from 'react-router-dom'
-import { ResetCSS } from '@pancakeswap/uikit'
+import { Router, Route, Switch } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import useEagerConnect from 'hooks/useEagerConnect'
 import { usePollBlockNumber } from 'state/block/hooks'
 import { usePollCoreFarmData } from 'state/farms/hooks'
 import { useFetchProfile } from 'state/profile/hooks'
 import { DatePickerPortal } from 'components/DatePicker'
+import { ResetCSS } from './components/pancake-uikit/src'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import SuspenseWithChunkError from './components/SuspenseWithChunkError'
@@ -21,6 +21,7 @@ import { RedirectToSwap } from './views/Swap/redirects'
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page
 const Home = lazy(() => import('./views/Home'))
+const Buy = lazy(() => import('./views/Buy'))
 const NotFound = lazy(() => import('./views/NotFound'))
 
 // This config is required for number formatting
@@ -49,7 +50,7 @@ const App: React.FC = () => {
             <Route exact strict path="/swap" component={Swap} />
             <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
             <Route path="/buy" exact>
-              <Home />
+              <Buy />
             </Route>
 
             {/* 404 */}
