@@ -1,12 +1,12 @@
 import React, { lazy } from 'react'
-import { Router, Route, Switch } from 'react-router-dom'
+import { Router, Redirect, Route, Switch } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import useEagerConnect from 'hooks/useEagerConnect'
 import { usePollBlockNumber } from 'state/block/hooks'
 import { usePollCoreFarmData } from 'state/farms/hooks'
 import { useFetchProfile } from 'state/profile/hooks'
 import { DatePickerPortal } from 'components/DatePicker'
-import { ResetCSS } from './components/pancake-uikit/src'
+import { ResetCSS } from '@pancakeswap/uikit'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import SuspenseWithChunkError from './components/SuspenseWithChunkError'
@@ -43,14 +43,17 @@ const App: React.FC = () => {
       <Menu>
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
-            <Route path="/" exact>
+            {/* <Route path="/" exact>
               <Home />
-            </Route>
+            </Route> */}
             {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
             <Route exact strict path="/swap" component={Swap} />
             <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
             <Route path="/buy" exact>
               <Buy />
+            </Route>
+            <Route path="/" exact>
+              <Redirect to="/swap" />
             </Route>
 
             {/* 404 */}
