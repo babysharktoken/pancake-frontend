@@ -49,7 +49,7 @@ const FAQs = () => {
             <FoldableText title={t('Step 1: Submit application')} mt="24px">
               <Box display="inline">
                 <Text display="inline" color="textSubtle">
-                  {t('Projects can submit an application to sponsor a yield farm and/or pool on PancakeSwap via the ')}
+                  {t('Projects can submit an application to sponsor a yield farm and/or pool on BabyShark Swap via the ')}
                 </Text>
                 <InlineLink href={FORM_ADDRESS} external>
                   {t('Application Form')}
@@ -59,7 +59,7 @@ const FAQs = () => {
             <FoldableText title={t('Step 2: Await whitelisting')} mt="24px">
               <Box color="textSubtle">
                 <Text color="textSubtle" mb="4px">
-                  {t('The PancakeSwap team will try to respond within a week.')}
+                  {t('The BabyShark Swap team will try to respond within a week.')}
                 </Text>
                 <List>
                   <FaqLi>
@@ -115,15 +115,15 @@ const FAQs = () => {
               <List>
                 <li>
                   {t(
-                    'A project being whitelisted for participation in an auction by PancakeSwap is in no way an endorsement or recommendation about said project.',
+                    'A project being whitelisted for participation in an auction by BabyShark Swap is in no way an endorsement or recommendation about said project.',
                   )}
                 </li>
                 <li>
-                  {t('PancakeSwap strongly advise against sending funds to any projects which request donations.')}
+                  {t('BabyShark Swap strongly advise against sending funds to any projects which request donations.')}
                 </li>
                 <li>
                   {t(
-                    'PancakeSwap reserves all rights to remove any project it deems to have acted with malicious or dangerous intent from auctions at any time.',
+                    'BabyShark Swap reserves all rights to remove any project it deems to have acted with malicious or dangerous intent from auctions at any time.',
                   )}
                 </li>
               </List>

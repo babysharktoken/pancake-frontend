@@ -1,19 +1,20 @@
 import { ChainId, Token } from '@pancakeswap/sdk'
 
+export const SHARK = new Token(ChainId.MAINNET, '0xcc9b175e4b88a22543c44f1cc65b73f63b0d4efe', 9, 'SHARK', 'BabyShark Token')
 export const CAKE: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
     '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'BabyShark Swap Token',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
     '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'BabyShark Swap Token',
   ),
 }
 export const BUSD: { [chainId: number]: Token } = {
@@ -81,6 +82,15 @@ const tokens = {
     },
     decimals: 18,
     projectLink: 'https://tranchess.com/',
+  },
+  shark: {
+    symbol: 'SHARK',
+    address: {
+      56: '0xcc9b175e4b88a22543c44f1cc65b73f63b0d4efe',
+      97: '',
+    },
+    decimals: 9,
+    projectLink: 'https://www.babysharktoken.com/',
   },
   titan: {
     symbol: 'TITAN',

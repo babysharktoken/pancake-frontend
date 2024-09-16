@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "BabyShark Swap Default List",
   "timestamp": "2021-05-06T00:00:00Z",
   "version": {
     "major": 3,
@@ -10,6 +10,14 @@
   "logoURI": "https://pancakeswap.finance/logo.png",
   "keywords": ["pancake", "default"],
   "tokens": [
+    {
+      "name": "BabyShark Token",
+      "symbol": "SHARK",
+      "address": "0xcc9b175e4b88a22543c44f1cc65b73f63b0d4efe",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0xcc9b175e4b88a22543c44f1cc65b73f63b0d4efe.png"
+    },
     {
       "name": "WBNB Token",
       "symbol": "WBNB",
@@ -51,7 +59,7 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059ff775485246999027b3197955.png"
     },
     {
-      "name": "PancakeSwap Token",
+      "name": "BabyShark Swap Token",
       "symbol": "CAKE",
       "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
       "chainId": 56,
